@@ -21,12 +21,20 @@ function MovieDetails(props) {
     );
 }
 
+const imageResource = createResource(
+    src => new Promise(resolve => {
+        const image = new Image();
+        image.onload = () => resolve(src);
+        image.src = src;
+    })
+);
+
 function MoviePoster(props) {
     return (
         <img
             className="MoviePoster"
             alt="poster"
-            src={props.src}
+            src={imageResource.read(cache, props.src)}
             width="200"
             height="300"
         />

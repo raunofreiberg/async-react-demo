@@ -258,7 +258,6 @@ body {
   grid-row-gap: calc(var(--pt) * 2);
   align-items: start;
   margin-bottom: calc(var(--pt) * 4);
-  animation: slideIn 500ms ease-in-out;
 }
 
 @keyframes slideIn {
