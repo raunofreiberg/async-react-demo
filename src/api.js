@@ -20,7 +20,7 @@ export const fetchMovieReviews = id => new Promise((resolve, reject) => {
     if (movie) {
         setTimeout(
             () => resolve(movie),
-            10000, // Adjust this on your own
+            5000, // Adjust this on your own
         );
         return;
     }
