@@ -4,7 +4,7 @@ import Placeholder from './Placeholder';
 import Spinner from './Spinner';
 import { fetchMovieDetails, fetchMovieReviews } from './api';
 
-export const cache = createCache();
+const cache = createCache();
 const movieDetailsResource = createResource(fetchMovieDetails);
 const movieReviewsResource = createResource(fetchMovieReviews);
 
