@@ -9,4 +9,5 @@ By default, fetching the movie details takes 3 seconds. Fetching reviews on the 
 
 To run locally:
 `yarn` or `npm install`
+
 `yarn start` or `npm start`
